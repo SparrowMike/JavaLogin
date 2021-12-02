@@ -34,9 +34,9 @@ public class LoginApplication {
 			userService.saveRole(new Role(null, "ROLE_ADMIN"));
 			userService.saveRole(new Role(null, "ROLE_SUPER_ADMIN"));
 
-			userService.saveUser(new User(null, "Johnny Bravo", "johnny", "1234", new ArrayList<>()));
+			userService.saveUser(new User(null, "Johnny Bravo", "john", "1234", new ArrayList<>()));
 
-			userService.addRoleToUser("johnny", "ROLE_USER");
+			userService.addRoleToUser("john", "ROLE_USER");
 		};
 	}
 }
